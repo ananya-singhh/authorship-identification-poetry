@@ -39,7 +39,7 @@ if __name__ == "__main__":
 
     parser.add_argument('--neural_arch', choices=['dan', 'lstm', 'lr', 'fcnn'], default='dan', type=str)
     parser.add_argument('--word_embs', choices=['bert', 'glove'], default='bert', type=str)
-    parser.add_argument('--gen_plot', choices=[True, False], default=False, type=bool())
+    parser.add_argument('--gen_plot', choices=[True, False], default=False, type=bool)
 
     args = parser.parse_args()
     
