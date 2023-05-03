@@ -47,8 +47,6 @@ if __name__ == "__main__":
     input_size = 0
     is_glove = None
     if args.word_embs == "glove":
-        # TODO: Feed the GloVe embeddings to NN modules appropriately
-        # for initializing the embeddings
         pkl = open("./data/glove_embeddings.pkl", "rb")
         embeddings = pickle.load(pkl)
         input_size = 50
